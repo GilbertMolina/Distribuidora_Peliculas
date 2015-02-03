@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{71ECE8EA-5349-4F5A-A8BE-BCFC5A6D0DC4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GUI.My.MyApplication</StartupObject>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>IcoApp.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmActoresPorPelicula.Designer.vb">
+      <DependentUpon>frmActoresPorPelicula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmActoresPorPelicula.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusquedaActores.Designer.vb">
+      <DependentUpon>frmBusquedaActores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusquedaActores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusquedaDirector.Designer.vb">
+      <DependentUpon>frmBusquedaDirector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusquedaDirector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusquedaLugar.Designer.vb">
+      <DependentUpon>frmBusquedaLugar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusquedaLugar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusquedaPelicula.Designer.vb">
+      <DependentUpon>frmBusquedaPelicula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusquedaPelicula.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusquedaProductor.Designer.vb">
+      <DependentUpon>frmBusquedaProductor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusquedaProductor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCantidadPremiosPorPelicula.Designer.vb">
+      <DependentUpon>frmCantidadPremiosPorPelicula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCantidadPremiosPorPelicula.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDirectores.Designer.vb">
+      <DependentUpon>frmDirectores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDirectores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActores.Designer.vb">
+      <DependentUpon>frmActores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmActores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnuncios.Designer.vb">
+      <DependentUpon>frmAnuncios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnuncios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCritica.Designer.vb">
+      <DependentUpon>frmCritica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCritica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLugar.Designer.vb">
+      <DependentUpon>frmLugar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLugar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLugarEstreno.Designer.vb">
+      <DependentUpon>frmLugarEstreno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLugarEstreno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPeliculas.Designer.vb">
+      <DependentUpon>frmPeliculas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPeliculas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPremios.Designer.vb">
+      <DependentUpon>frmPremios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPremios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPremiosPorPelicula.Designer.vb">
+      <DependentUpon>frmPremiosPorPelicula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPremiosPorPelicula.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductor.Designer.vb">
+      <DependentUpon>frmProductor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="mdiPrincipal.Designer.vb">
+      <DependentUpon>mdiPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mdiPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcerca.Designer.vb">
+      <DependentUpon>frmAcerca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcerca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductorPelicula.Designer.vb">
+      <DependentUpon>frmProductorPelicula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductorPelicula.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmActoresPorPelicula.resx">
+      <DependentUpon>frmActoresPorPelicula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusquedaActores.resx">
+      <DependentUpon>frmBusquedaActores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusquedaDirector.resx">
+      <DependentUpon>frmBusquedaDirector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusquedaLugar.resx">
+      <DependentUpon>frmBusquedaLugar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusquedaPelicula.resx">
+      <DependentUpon>frmBusquedaPelicula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActores.resx">
+      <DependentUpon>frmActores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusquedaProductor.resx">
+      <DependentUpon>frmBusquedaProductor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCantidadPremiosPorPelicula.resx">
+      <DependentUpon>frmCantidadPremiosPorPelicula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDirectores.resx">
+      <DependentUpon>frmDirectores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnuncios.resx">
+      <DependentUpon>frmAnuncios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCritica.resx">
+      <DependentUpon>frmCritica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLugar.resx">
+      <DependentUpon>frmLugar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLugarEstreno.resx">
+      <DependentUpon>frmLugarEstreno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPeliculas.resx">
+      <DependentUpon>frmPeliculas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPremios.resx">
+      <DependentUpon>frmPremios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPremiosPorPelicula.resx">
+      <DependentUpon>frmPremiosPorPelicula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductor.resx">
+      <DependentUpon>frmProductor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiPrincipal.resx">
+      <DependentUpon>mdiPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcerca.resx">
+      <DependentUpon>frmAcerca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductorPelicula.resx">
+      <DependentUpon>frmProductorPelicula.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logic\BusinessLevel.vbproj">
+      <Project>{055D2262-7A46-4306-A22C-C797FB77DBB4}</Project>
+      <Name>BusinessLevel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tipos\domain.vbproj">
+      <Project>{274E6A5E-2827-4272-986F-396106499AB6}</Project>
+      <Name>domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIA_Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IcoApp.ico" />
+    <None Include="Resources\windows.png" />
+    <None Include="Resources\busqueda2.png" />
+    <None Include="Resources\sign_in.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\option.png" />
+    <None Include="Resources\app.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\hollywood.jpg" />
+    <None Include="Resources\seleccionar.png" />
+    <None Include="Resources\editar.png" />
+    <None Include="Resources\borrar.png" />
+    <None Include="Resources\agregar.png" />
+    <None Include="Resources\limpiarCampos.png" />
+    <None Include="Resources\busqueda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
